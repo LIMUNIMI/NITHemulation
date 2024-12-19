@@ -4,6 +4,7 @@ _An extension for the NITH framework to provide some emulation capabilities._
 <div align="center">
   <img src="NithLogo_White_Trace.png" alt="NITH logo." width="150px"/>
 </div>
+<br>
 
 It can be used to easily add Mouse and Keyboard emulation capabilities to your accessible application.
 
