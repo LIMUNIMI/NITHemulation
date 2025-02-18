@@ -1,4 +1,4 @@
-﻿namespace NITHdmis.Modules.Mouse
+﻿namespace NITHemulation.Modules.Mouse
 {
     /// <summary>
     /// Represents the different polling modes for the mouse.

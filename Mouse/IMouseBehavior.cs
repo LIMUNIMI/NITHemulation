@@ -1,7 +1,7 @@
-﻿namespace NITHdmis.Modules.Mouse
+﻿namespace NITHemulation.Modules.Mouse
 {
     public interface IMouseBehavior
     {
-        int ReceiveSample(MouseModuleSample sample);
+        int ReceiveSample(MouseDataSample sample);
     }
 }

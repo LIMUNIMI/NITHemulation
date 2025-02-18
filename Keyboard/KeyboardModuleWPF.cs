@@ -2,7 +2,7 @@
 using RawInputProcessor;
 using System.Windows;
 
-namespace NITHdmis.Modules.Keyboard
+namespace NITHemulation.Modules.Keyboard
 {
     /// <summary>
     /// Represents a keyboard module for WPF applications.

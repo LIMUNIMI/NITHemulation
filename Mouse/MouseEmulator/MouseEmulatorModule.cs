@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using NITHlibrary.Tools.Filters.PointFilters;
 
-namespace NITHdmis.Modules.Mouse.MouseEmulator
+namespace NITHemulation.Modules.Mouse.MouseEmulator
 {
     public class MouseEmulatorModule
     {

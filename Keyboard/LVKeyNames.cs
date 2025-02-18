@@ -1,4 +1,4 @@
-﻿namespace NITHdmis.Modules.Keyboard
+﻿namespace NITHemulation.Modules.Keyboard
 {
     /// <summary>
     /// List of keyboard virtual key names.

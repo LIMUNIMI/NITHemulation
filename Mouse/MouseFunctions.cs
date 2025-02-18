@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace NITHdmis.Modules.Mouse
+namespace NITHemulation.Modules.Mouse
 {
     internal static class MouseFunctions
     {

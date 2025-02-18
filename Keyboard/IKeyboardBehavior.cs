@@ -1,6 +1,6 @@
 ﻿using RawInputProcessor;
 
-namespace NITHdmis.Modules.Keyboard
+namespace NITHemulation.Modules.Keyboard
 {
     /// <summary>
     /// Defines a specific behavior for keyboard events.

@@ -3,7 +3,7 @@ using NITHlibrary.Tools.Filters.ValueFilters;
 using NITHlibrary.Tools.Mappers;
 using NITHlibrary.Tools.Timers;
 
-namespace NITHdmis.Modules.Mouse
+namespace NITHemulation.Modules.Mouse
 {
     /// <summary>
     /// A receiver for mouse input which samples the mouse position and velocity at given polling rate.
@@ -128,7 +128,7 @@ namespace NITHdmis.Modules.Mouse
         /// <summary>
         /// Gets or sets the sample of mouse data.
         /// </summary>
-        private MouseModuleSample Sample { get; set; }
+        private MouseDataSample Sample { get; set; }
 
         /// <summary>
         /// Gets or sets the velocity extractor for X axis.
@@ -224,7 +224,7 @@ namespace NITHdmis.Modules.Mouse
                     DirectionX = VelocityExtractorX.Direction;
                     DirectionY = VelocityExtractorY.Direction;
 
-                    Sample = new MouseModuleSample(VelocityX, VelocityY, PositionX, PositionY, DirectionX, DirectionY);
+                    Sample = new MouseDataSample(VelocityX, VelocityY, PositionX, PositionY, DirectionX, DirectionY);
 
                     foreach (IMouseBehavior behavior in Behaviors)
                     {
@@ -262,7 +262,7 @@ namespace NITHdmis.Modules.Mouse
 
                     MouseSender.SetCursorPosition(new Point(FpsOffsetX, FpsOffsetY));     // Return pos to zero
 
-                    Sample = new MouseModuleSample(VelocityX, VelocityY, PositionX, PositionY, DirectionX, DirectionY);
+                    Sample = new MouseDataSample(VelocityX, VelocityY, PositionX, PositionY, DirectionX, DirectionY);
 
                     foreach (IMouseBehavior behavior in Behaviors)
                     {

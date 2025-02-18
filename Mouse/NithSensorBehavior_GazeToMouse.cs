@@ -1,7 +1,7 @@
 ﻿using NITHlibrary.Nith.Internals;
 using System.Drawing;
 
-namespace NITHdmis.Modules.Mouse
+namespace NITHemulation.Modules.Mouse
 {
     /// <summary>
     /// A behavior for gaze tracking sensors. Translates gaze coordinates into mouse cursor positions.

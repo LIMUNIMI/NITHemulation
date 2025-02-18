@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace NITHdmis.Modules.Mouse
+namespace NITHemulation.Modules.Mouse
 {
     /// <summary>
     /// Provides methods to send various mouse events and emulate mouse functions.

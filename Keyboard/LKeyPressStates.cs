@@ -1,4 +1,4 @@
-﻿namespace NITHdmis.Modules.Keyboard
+﻿namespace NITHemulation.Modules.Keyboard
 {
     /// <summary>
     /// Defines the states of a key press in a keyboard input system.
