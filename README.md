@@ -6,6 +6,8 @@ _An extension for NITHlibrary to provide some emulation capabilities._
 </div>
 <br>
 
+## Overview
+
 NITHemulation is a [NITHlibrary](https://github.com/LIMUNIMI/NITHlibrary) extension which can be used to easily add Mouse and Keyboard emulation capabilities to your accessible application.
 
 _At its current state, NITHemulation is compatible only with **Windows** operating systems, due to calls to the system's core libraries for input/output management. Moreover, it's compatible and depends on **Windows Presentation Foundation (WPF)** libraries._
