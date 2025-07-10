@@ -8,7 +8,7 @@ namespace ConsoleEmulation
     /// A custom TextWriter that redirects console output to a TextBlock control in a WPF application.
     /// Useful to redirect errors and messages, since WPF does not support a console natively.
     /// </summary>
-    public class ConsoleTextToTextBox : TextWriter
+    public class ConsoleTextToTextBlock : TextWriter
     {
         private TextBlock _textBlock;
         private ScrollViewer _scrollViewer;
@@ -16,11 +16,11 @@ namespace ConsoleEmulation
         private readonly int _maxLines = 100;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ConsoleTextToTextBox"/> class.
+        /// Initializes a new instance of the <see cref="ConsoleTextToTextBlock"/> class.
         /// </summary>
         /// <param name="textBlock">The TextBlock control to which console output will be redirected.</param>
         /// <param name="scrollViewer">The ScrollViewer control used to enable scrolling on the TextBlock.</param>
-        public ConsoleTextToTextBox(TextBlock textBlock, ScrollViewer scrollViewer)
+        public ConsoleTextToTextBlock(TextBlock textBlock, ScrollViewer scrollViewer)
         {
             _textBlock = textBlock;
             _scrollViewer = scrollViewer;

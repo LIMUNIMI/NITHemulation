@@ -35,8 +35,8 @@ namespace NITHemulation.Modules.Mouse
         {
             if (nithData.ContainsParameters(requiredParams) && Enabled)
             {
-                int gaze_x = (int)nithData.GetParameterValue(NithParameters.gaze_x).Value.BaseAsDouble;
-                int gaze_y = (int)nithData.GetParameterValue(NithParameters.gaze_y).Value.BaseAsDouble;
+                int gaze_x = (int)nithData.GetParameterValue(NithParameters.gaze_x).Value.ValueAsDouble;
+                int gaze_y = (int)nithData.GetParameterValue(NithParameters.gaze_y).Value.ValueAsDouble;
                 MouseSender.SetCursorPosition(new Point(gaze_x, gaze_y));
             }
         }
