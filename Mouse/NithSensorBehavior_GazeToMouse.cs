@@ -33,11 +33,20 @@ namespace NITHemulation.Modules.Mouse
         /// <param name="nithData">The sensor data containing gaze information.</param>
         public void HandleData(NithSensorData nithData)
         {
-            if (nithData.ContainsParameters(requiredParams) && Enabled)
+            try
             {
-                int gaze_x = (int)nithData.GetParameterValue(NithParameters.gaze_x).Value.ValueAsDouble;
-                int gaze_y = (int)nithData.GetParameterValue(NithParameters.gaze_y).Value.ValueAsDouble;
-                MouseSender.SetCursorPosition(new Point(gaze_x, gaze_y));
+                if (nithData.ContainsParameters(requiredParams) && Enabled)
+                {
+                    int gaze_x = (int)nithData.GetParameterValue(NithParameters.gaze_x).Value.ValueAsDouble;
+                    int gaze_y = (int)nithData.GetParameterValue(NithParameters.gaze_y).Value.ValueAsDouble;
+                    MouseSender.SetCursorPosition(new Point(gaze_x, gaze_y));
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log exception for debugging
+                Console.WriteLine($"NithSensorBehavior_GazeToMouse Exception: {ex.Message}");
+                // Silent failure for gaze control - don't crash the pipeline
             }
         }
     }
